@@ -1,0 +1,138 @@
+/* Default styles for larger screens */
+.home {
+    background: center / cover url(../images/home-bg.png);
+    min-height: calc(100vh + var(--header-height));
+    display: flex;
+    align-items: center;
+}
+
+.home-container {
+    width: 100%;
+    padding-left: 60px;
+}
+
+.home-content {
+    max-width: 660px;
+}
+
+.home-subtitle,
+.home-description {
+    color: var(--title-color);
+}
+
+.home-subtitle {
+    font-family: var(--second-font);
+    font-size: var(--h1-font-size);
+    font-weight: var(--weight-500);
+}
+
+.home-title {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--weight-700);
+    margin-block: 1.25rem;
+}
+
+.home-description {
+    margin-bottom: 36px;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--title-color);
+    background: var(--first-color);
+    border: 2px solid var(--first-color);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.home-btns {
+    display: flex;
+    column-gap: 2rem;
+    /* border-radius: 10px; */
+}
+
+.home-btn {
+    background-color: transparent;
+}
+
+.home-btn:hover {
+    background-color: var(--first-color);
+    color: var(--title-color);
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .home-container {
+        padding-left: 20px;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-title {
+        font-size: var(--h1-font-size);
+    }
+
+    .home-subtitle {
+        font-size: var(--h2-font-size);
+    }
+
+    .home-btns {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+/* Tablet screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .home-container {
+        padding-left: 40px;
+    }
+
+    .home-content {
+        max-width: 80%;
+    }
+
+    .home-title {
+        font-size: var(--h1-font-size);
+    }
+
+    .home-subtitle {
+        font-size: var(--h2-font-size);
+    }
+
+    .home-btns {
+        flex-direction: row;
+        column-gap: 1.5rem;
+    }
+}
+
+/* Laptop screens */
+@media (min-width: 1025px) {
+    .home-container {
+        padding-left: 60px;
+    }
+
+    .home-content {
+        max-width: 660px;
+    }
+
+    .home-title {
+        font-size: var(--biggest-font-size);
+    }
+
+    .home-subtitle {
+        font-size: var(--h1-font-size);
+    }
+
+    .home-btns {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+}

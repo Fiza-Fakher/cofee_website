@@ -1,0 +1,70 @@
+/* Default styles for larger screens */
+.about-grid {
+  display: flex;
+  column-gap: 48px;
+}
+
+.about-img {
+  margin-left: 20px;
+}
+
+.about-content {
+  /* padding-left: 40px; */
+  padding-top: 20px;
+}
+
+.about {
+  color: var(--first-color);
+  /* margin-bottom: 10px; */
+  font-size: var(--h1-font-size);
+  padding-bottom: 0;
+}
+
+.about-details {
+  margin-block: 1.25rem 2.25rem;
+}
+
+.about-details-description {
+  display: flex;
+  align-items: center;
+}
+
+.about-details,
+.about-details-description {
+  gap: 10px;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .about-grid {
+      flex-direction: column;
+      row-gap: 20px; /* Add some space between rows */
+  }
+
+  .about-img {
+      margin-left: 0; /* Mobile screens ke liye margin remove */
+  }
+
+  .about-content {
+      padding-left: 0; /* Mobile screens ke liye padding remove */
+  }
+}
+
+/* Tablet screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-grid {
+      flex-direction: column;
+      row-gap: 20px; /* Add some space between rows */
+  }
+
+  .about-content {
+      padding-left: 20px; /* Tablet screens ke liye padding adjust */
+  }
+}
+
+/* Laptop screens */
+@media (min-width: 1025px) {
+  .about-content {
+      padding-left: 40px; /* Original padding for larger screens */
+  }
+}

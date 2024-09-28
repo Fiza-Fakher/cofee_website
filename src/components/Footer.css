@@ -1,0 +1,167 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-content {
+    flex: 1 1 200px;
+    margin: 20px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo-img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .footer-description {
+    margin-top: 10px;
+  }
+  
+  .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: rgb(186, 147, 115);
+  }
+  
+  .footer-title {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links,
+  .opening-hour-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    text-decoration: none;
+  }
+  
+  .footer-link .icon {
+    margin-right: 5px;
+  }
+  
+  .opening-hour-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  .opening-hour-list {
+    border: 2px dotted rgb(186, 147, 115);
+    padding: 10px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .subscribe-input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-socials {
+    margin-top: 20px;
+  }
+  
+  .footer-social-follow {
+    margin-bottom: 10px;
+  }
+  
+  .footer-social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-social-link {
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid rgba(186, 147, 115, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-social-link:hover {
+    color: rgb(186, 147, 115);
+    background-color: #fff;
+    border-color: rgb(186, 147, 115);
+  }
+  
+  .copyright-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-grid {
+      flex-direction: column;
+    }
+  
+    .footer-content {
+      margin: 10px 0;
+    }
+  
+    .footer-logo-img {
+      max-width: 80px;
+    }
+  
+    .footer-social-links {
+      justify-content: center;
+    }
+  
+    .footer-contact-item {
+      font-size: 14px;
+    }
+  
+    .footer-link {
+      font-size: 14px;
+    }
+  
+    .footer-social-link {
+      font-size: 18px;
+      padding: 8px;
+    }
+  }
+  

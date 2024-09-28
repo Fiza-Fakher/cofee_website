@@ -1,0 +1,68 @@
+.features-grid {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  gap: 20px; /* Add gap between items */
+  padding: 0 20px; /* Add padding to both sides */
+  border-radius: 2px solid var(--first-color);
+}
+
+.features-item {
+  background-color: var(--container-color);
+  padding: 20px;
+  flex: 1; /* Make items take equal space */
+  max-width: 300px; /* Optional: Limit the maximum width of each item */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  transition: 0.5s var(--transition); 
+  /* border-radius: 2px solid var(--first-color); */
+}
+
+.feature-img {
+  width: 60px;
+  margin-bottom: 1.25rem;
+}
+
+.feature-shape {
+  display: none;
+  position: absolute;
+  width: 120px;
+  right: 1.25rem;
+  top: 3rem;
+  opacity: 0.2;
+}
+
+.section {
+  text-align: center; /* Center align the section title */
+}
+
+.about {
+  margin-bottom: 1rem; /* Add margin below the h1 title */
+}
+
+.section-title {
+  margin-bottom: 2rem; /* Add margin below the h2 title */
+}
+
+.feature-title {
+  margin: 1rem 0; /* Add margin to the title */
+}
+
+.feature-description {
+  margin-bottom: 1.5rem; /* Add margin below the description */
+}
+
+.features-item:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center; /* Center align items vertically */
+  }
+
+  .features-item {
+    max-width: 100%; /* Remove the max-width to make items full-width */
+    margin-bottom: 20px; /* Add margin below each item for spacing */
+  }
+}

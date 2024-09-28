@@ -1,0 +1,97 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+PE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+PE:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, textarea, body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--second-font);
+  color: var(--title-color);
+  font-weight: var(--weight-400);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* CSS Variables */
+:root {
+  --header-height: 5rem; /* Default value added */
+  /* colors */
+  --first-color: rgb(186, 147, 115);
+  --first-color-light: rgb(98, 91, 75);
+  --title-color: rgb(255, 255, 255);
+  --text-color: rgb(171, 171, 171);
+  --bg-color: rgb(20, 20, 20);
+  --container-color: rgb(15, 15, 15);
+  --hsla: rgba(0, 0, 0, 0.75);
+
+  /* typography */
+  --body-font: 'Kanit', sans-serif;
+  --second-font: 'Lobster Two', cursive;
+  --biggest-font-size: 66px;
+  --bigger-font-size: 3.125rem;
+  --big-font-size: 2.5rem;
+  --h1-font-size: 1.875rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --largest-font-size: 1.375rem;
+  --larger-font-size: 1.25rem;
+  --large-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  /* border radius */
+  --radius: 0.5rem;
+
+  /* transition */
+  --transition: ease-in-out;
+}
+/* .container{
+  background-color: var(--first-color);
+  max-width: 1200px;
+margin-inline: auto;
+} */
+section{
+  padding-block: 7.5rem;
+ }
+ .section-title{
+  font-size: var(--big-font-size);
+  margin-bottom: 1rem;
+ }

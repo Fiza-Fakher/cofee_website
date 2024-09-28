@@ -1,0 +1,79 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-between;
+  }
+  
+  .nav-container {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 12px;
+  }
+  
+  .nav-logo-img {
+    width: 190px;
+  }
+  
+  .nav-list {
+    display: flex;
+    column-gap: 32px;
+  }
+  
+  .nav-link,
+  .nav-toggle {
+    color: var(--title-color);
+  }
+  
+  .nav-link {
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .nav-toggle span {
+    background-color: var(--title-color);
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 4px 0;
+    width: 25px;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: calc(var(--header-height) + 1.5rem);
+      background-color: var(--container-color);
+      width: 100%;
+      left: 0;
+    }
+  
+    .nav-list.active {
+      display: flex;
+    }
+  
+    .nav-toggle {
+      display: flex;
+    }
+  }
+  
+  /* Add this class to handle the active state */
+  .nav-menu.active .nav-list {
+    display: flex;
+  }
+  
